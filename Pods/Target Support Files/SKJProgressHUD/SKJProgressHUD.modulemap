@@ -1,0 +1,6 @@
+framework module SKJProgressHUD {
+  umbrella header "SKJProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}

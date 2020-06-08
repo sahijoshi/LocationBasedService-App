@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Cosmos (21.0.0)
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - GooglePlacesAPI (1.1.4):
+    - Alamofire (~> 4)
+    - ObjectMapper (~> 3)
+  - HDAugmentedReality (3.0.0)
+  - ObjectMapper (3.5.1)
+  - Polyline (4.2.1)
+  - SKJProgressHUD (0.1.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Cosmos (= 21.0.0)
+  - GoogleMaps (= 3.8.0)
+  - GooglePlaces (= 3.8.0)
+  - GooglePlacesAPI (= 1.1.4)
+  - HDAugmentedReality (= 3.0.0)
+  - Polyline (= 4.2.1)
+  - SKJProgressHUD
+  - SVProgressHUD (= 2.2.5)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - GoogleMaps
+    - GooglePlaces
+    - GooglePlacesAPI
+    - HDAugmentedReality
+    - ObjectMapper
+    - Polyline
+    - SKJProgressHUD
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  GooglePlacesAPI: 6184a463b58443f1bde3fab6ce725c1c8e540419
+  HDAugmentedReality: ff518e9c08704261b4226ffa820464aa5a9b1626
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Polyline: 0e9890790292741c8186201a536b6bb6a78d02dd
+  SKJProgressHUD: 8675c3f6c52652d36a3cf1826a3b64c925a0bbc4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 8337564a4110cf53b3d9d0267b7ccd9d0f11c04c
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module Pods_LBSARTests {
+  umbrella header "Pods-LBSARTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
