@@ -13,11 +13,11 @@ struct Place: Codable {
     case results
   }
 
-  var results: Results?
+  var results: [Results]?
 
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
-    results = try container.decodeIfPresent(Results.self, forKey: .results)
+    results = try container.decodeIfPresent([Results].self, forKey: .results)
   }
 
 }

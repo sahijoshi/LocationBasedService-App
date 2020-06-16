@@ -10,14 +10,14 @@ import Foundation
 
 struct NetworkRequest {
     
-    static func request(_ route: Router) {
+    static func request(_ route: Router, completion: @escaping (Place) -> () ) {
         let request =  route.asURLRequest()
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {return}
             
             do {
-                let results = try JSONDecoder().decode(Place.self, from: data)
-                
+                let place = try JSONDecoder().decode(Place.self, from: data)
+                completion(place)
             } catch {
                 print(error.localizedDescription)
             }

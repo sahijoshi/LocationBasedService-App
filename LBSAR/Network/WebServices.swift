@@ -11,11 +11,13 @@ import CoreLocation
 
 struct WebServices {
     
-    static func loadNearbyPointOfInterest(location: CLLocation, radius: Int = 9000, searchKey: String = "", completion: @escaping () -> ()) {
+    static func loadNearbyPointOfInterest(location: CLLocation, radius: Int = 9000, searchKey: String = "", completion: @escaping ([Results]?) -> ()) {
         let location = CLLocation(latitude: 37.78583400, longitude: -122.40641700)
         let router = Router.loadPointOfInterest(location: location, radius: 9000, searchKey: "bank", apiKey: Constants.APIKey.googleApiKey)
         
-        NetworkRequest.request(router)
+        NetworkRequest.request(router){ place in
+            completion(place.results)
+        }
     }
     
 }

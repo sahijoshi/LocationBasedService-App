@@ -7,23 +7,23 @@
 //
 
 import UIKit
-import CoreLocation
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-//        let location = CLLocation(latitude: 37.78583400, longitude: -122.40641700)
-//
-//        WebServices.loadNearbyPointOfInterest(location: location, radius: 9000, searchKey: "") {
-//
-//        }
-        
+        configureGoogleMapService()
         return true
     }
+    
+    private func configureGoogleMapService() {
+        GMSServices.provideAPIKey(Constants.APIKey.googleApiKey)
+        GMSPlacesClient.provideAPIKey(Constants.APIKey.googleApiKey)
+    }
+
 
     // MARK: UISceneSession Lifecycle
 

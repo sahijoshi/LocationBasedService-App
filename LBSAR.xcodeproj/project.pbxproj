@@ -21,6 +21,13 @@
 		775667F22498B3CB00406297 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667F12498B3CB00406297 /* UIColor+Extension.swift */; };
 		775667F42498B3DE00406297 /* NearbyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667F32498B3DE00406297 /* NearbyPlacesViewController.swift */; };
 		775667F72498B40200406297 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667F62498B40200406297 /* HomeCell.swift */; };
+		7756680C24994ADB00406297 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756680624994AD900406297 /* AnnotationView.swift */; };
+		7756680D24994ADB00406297 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756680724994AD900406297 /* InfoView.swift */; };
+		7756680E24994ADB00406297 /* MarkerCustomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756680824994ADA00406297 /* MarkerCustomInfo.swift */; };
+		7756680F24994ADB00406297 /* AnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7756680924994ADB00406297 /* AnnotationView.xib */; };
+		7756681024994ADB00406297 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7756680A24994ADB00406297 /* InfoView.xib */; };
+		7756681124994ADB00406297 /* MarkerCustomInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7756680B24994ADB00406297 /* MarkerCustomInfo.xib */; };
+		775668142499560B00406297 /* MyMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775668132499560A00406297 /* MyMarker.swift */; };
 		7799241D2497D1340083EF85 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799241C2497D1340083EF85 /* WebServices.swift */; };
 		7799241F2497D4510083EF85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799241E2497D4510083EF85 /* NetworkRequest.swift */; };
 		779924212497D4C50083EF85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779924202497D4C50083EF85 /* Router.swift */; };
@@ -68,6 +75,13 @@
 		775667F12498B3CB00406297 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		775667F32498B3DE00406297 /* NearbyPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesViewController.swift; sourceTree = "<group>"; };
 		775667F62498B40200406297 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		7756680624994AD900406297 /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		7756680724994AD900406297 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		7756680824994ADA00406297 /* MarkerCustomInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerCustomInfo.swift; sourceTree = "<group>"; };
+		7756680924994ADB00406297 /* AnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnotationView.xib; sourceTree = "<group>"; };
+		7756680A24994ADB00406297 /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		7756680B24994ADB00406297 /* MarkerCustomInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerCustomInfo.xib; sourceTree = "<group>"; };
+		775668132499560A00406297 /* MyMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMarker.swift; sourceTree = "<group>"; };
 		7799241C2497D1340083EF85 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		7799241E2497D4510083EF85 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		779924202497D4C50083EF85 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -180,6 +194,7 @@
 		773DAF65248DCCB6002EE000 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				775668122499560100406297 /* Marker */,
 				775667ED2498B36800406297 /* Home */,
 				7799244B249831220083EF85 /* NearbyPlace */,
 			);
@@ -189,6 +204,7 @@
 		773DAF66248DCCC2002EE000 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7756680524994AC000406297 /* ViewComponents */,
 				775667F52498B3F900406297 /* HomeCell */,
 			);
 			path = View;
@@ -247,6 +263,27 @@
 				775667F62498B40200406297 /* HomeCell.swift */,
 			);
 			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		7756680524994AC000406297 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7756680624994AD900406297 /* AnnotationView.swift */,
+				7756680924994ADB00406297 /* AnnotationView.xib */,
+				7756680724994AD900406297 /* InfoView.swift */,
+				7756680A24994ADB00406297 /* InfoView.xib */,
+				7756680824994ADA00406297 /* MarkerCustomInfo.swift */,
+				7756680B24994ADB00406297 /* MarkerCustomInfo.xib */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		775668122499560100406297 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				775668132499560A00406297 /* MyMarker.swift */,
+			);
+			path = Marker;
 			sourceTree = "<group>";
 		};
 		77992444249821110083EF85 /* Encoding */ = {
@@ -360,7 +397,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				773DAF50248DC8E3002EE000 /* LaunchScreen.storyboard in Resources */,
+				7756680F24994ADB00406297 /* AnnotationView.xib in Resources */,
+				7756681024994ADB00406297 /* InfoView.xib in Resources */,
 				773DAF4D248DC8E3002EE000 /* Assets.xcassets in Resources */,
+				7756681124994ADB00406297 /* MarkerCustomInfo.xib in Resources */,
 				773DAF4B248DC8E1002EE000 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,8 +517,12 @@
 				7799245E249831470083EF85 /* Northeast.swift in Sources */,
 				7799241D2497D1340083EF85 /* WebServices.swift in Sources */,
 				775667EF2498B37600406297 /* HomeItem.swift in Sources */,
+				775668142499560B00406297 /* MyMarker.swift in Sources */,
+				7756680C24994ADB00406297 /* AnnotationView.swift in Sources */,
+				7756680D24994ADB00406297 /* InfoView.swift in Sources */,
 				7799245B249831470083EF85 /* Results.swift in Sources */,
 				773DAFAF24916B4F002EE000 /* NetworkConstant.swift in Sources */,
+				7756680E24994ADB00406297 /* MarkerCustomInfo.swift in Sources */,
 				773DAF69248DCCF1002EE000 /* HomeViewController.swift in Sources */,
 				77992459249831470083EF85 /* Viewport.swift in Sources */,
 				773DAFB224916BAA002EE000 /* Constants.swift in Sources */,
