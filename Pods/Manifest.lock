@@ -14,7 +14,6 @@ PODS:
   - HDAugmentedReality (3.0.0)
   - ObjectMapper (3.5.1)
   - Polyline (4.2.1)
-  - SKJProgressHUD (0.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -24,7 +23,6 @@ DEPENDENCIES:
   - GooglePlacesAPI (= 1.1.4)
   - HDAugmentedReality (= 3.0.0)
   - Polyline (= 4.2.1)
-  - SKJProgressHUD
   - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
@@ -37,7 +35,6 @@ SPEC REPOS:
     - HDAugmentedReality
     - ObjectMapper
     - Polyline
-    - SKJProgressHUD
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -49,9 +46,8 @@ SPEC CHECKSUMS:
   HDAugmentedReality: ff518e9c08704261b4226ffa820464aa5a9b1626
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Polyline: 0e9890790292741c8186201a536b6bb6a78d02dd
-  SKJProgressHUD: 8675c3f6c52652d36a3cf1826a3b64c925a0bbc4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 8337564a4110cf53b3d9d0267b7ccd9d0f11c04c
+PODFILE CHECKSUM: fbaecf92a12bec773fce8ece3e51ad71ee61bf52
 
 COCOAPODS: 1.8.4
