@@ -9,5 +9,11 @@
 import Foundation
 
 struct Constants {
+    
+    struct Preferences {
+        static let collectionViewSectionInset = 10
+        static let collectionViewMinmCellSpacing = 10
+        static let mapRadius = 9000
+    }
 
 }

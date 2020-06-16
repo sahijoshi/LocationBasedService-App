@@ -17,11 +17,25 @@
 		773DAF69248DCCF1002EE000 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAF68248DCCF1002EE000 /* HomeViewController.swift */; };
 		773DAFAF24916B4F002EE000 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAFAE24916B4F002EE000 /* NetworkConstant.swift */; };
 		773DAFB224916BAA002EE000 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAFB124916BAA002EE000 /* Constants.swift */; };
+		775667EF2498B37600406297 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667EE2498B37600406297 /* HomeItem.swift */; };
+		775667F22498B3CB00406297 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667F12498B3CB00406297 /* UIColor+Extension.swift */; };
+		775667F42498B3DE00406297 /* NearbyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667F32498B3DE00406297 /* NearbyPlacesViewController.swift */; };
+		775667F72498B40200406297 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775667F62498B40200406297 /* HomeCell.swift */; };
 		7799241D2497D1340083EF85 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799241C2497D1340083EF85 /* WebServices.swift */; };
 		7799241F2497D4510083EF85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799241E2497D4510083EF85 /* NetworkRequest.swift */; };
 		779924212497D4C50083EF85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779924202497D4C50083EF85 /* Router.swift */; };
 		77992446249821260083EF85 /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992445249821260083EF85 /* URLEncoding.swift */; };
 		7799244A249827120083EF85 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992449249827120083EF85 /* NetworkError.swift */; };
+		77992456249831460083EF85 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244C249831440083EF85 /* Photos.swift */; };
+		77992457249831470083EF85 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244D249831450083EF85 /* Geometry.swift */; };
+		77992458249831470083EF85 /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244E249831450083EF85 /* Southwest.swift */; };
+		77992459249831470083EF85 /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244F249831450083EF85 /* Viewport.swift */; };
+		7799245A249831470083EF85 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992450249831450083EF85 /* Place.swift */; };
+		7799245B249831470083EF85 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992451249831450083EF85 /* Results.swift */; };
+		7799245C249831470083EF85 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992452249831450083EF85 /* Location.swift */; };
+		7799245D249831470083EF85 /* PlusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992453249831460083EF85 /* PlusCode.swift */; };
+		7799245E249831470083EF85 /* Northeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992454249831460083EF85 /* Northeast.swift */; };
+		7799245F249831470083EF85 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992455249831460083EF85 /* OpeningHours.swift */; };
 		AAC68CA7E6DA9FCCDD16B585 /* Pods_LBSAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FFE72947BC44C36EED39B4 /* Pods_LBSAR.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +64,25 @@
 		773DAF68248DCCF1002EE000 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		773DAFAE24916B4F002EE000 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		773DAFB124916BAA002EE000 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		775667EE2498B37600406297 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		775667F12498B3CB00406297 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		775667F32498B3DE00406297 /* NearbyPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesViewController.swift; sourceTree = "<group>"; };
+		775667F62498B40200406297 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		7799241C2497D1340083EF85 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		7799241E2497D4510083EF85 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		779924202497D4C50083EF85 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		77992445249821260083EF85 /* URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
 		77992449249827120083EF85 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7799244C249831440083EF85 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		7799244D249831450083EF85 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		7799244E249831450083EF85 /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
+		7799244F249831450083EF85 /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
+		77992450249831450083EF85 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		77992451249831450083EF85 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		77992452249831450083EF85 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		77992453249831460083EF85 /* PlusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusCode.swift; sourceTree = "<group>"; };
+		77992454249831460083EF85 /* Northeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Northeast.swift; sourceTree = "<group>"; };
+		77992455249831460083EF85 /* OpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
 		77C6E86B6A7802D930F0B3F4 /* Pods-LBSAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBSAR.release.xcconfig"; path = "Target Support Files/Pods-LBSAR/Pods-LBSAR.release.xcconfig"; sourceTree = "<group>"; };
 		91A4759ED8A8048E4EE709CE /* libPods-LBSARTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBSARTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FFE72947BC44C36EED39B4 /* Pods_LBSAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBSAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +180,8 @@
 		773DAF65248DCCB6002EE000 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				775667ED2498B36800406297 /* Home */,
+				7799244B249831220083EF85 /* NearbyPlace */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +189,7 @@
 		773DAF66248DCCC2002EE000 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				775667F52498B3F900406297 /* HomeCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				773DAF68248DCCF1002EE000 /* HomeViewController.swift */,
+				775667F32498B3DE00406297 /* NearbyPlacesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +206,7 @@
 		773DAF6A248DCD00002EE000 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				775667F02498B3BB00406297 /* Extensions */,
 				773DAFB124916BAA002EE000 /* Constants.swift */,
 			);
 			path = Utility;
@@ -192,12 +225,53 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		775667ED2498B36800406297 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				775667EE2498B37600406297 /* HomeItem.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		775667F02498B3BB00406297 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				775667F12498B3CB00406297 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		775667F52498B3F900406297 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				775667F62498B40200406297 /* HomeCell.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
 		77992444249821110083EF85 /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
 				77992445249821260083EF85 /* URLEncoding.swift */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		7799244B249831220083EF85 /* NearbyPlace */ = {
+			isa = PBXGroup;
+			children = (
+				77992450249831450083EF85 /* Place.swift */,
+				7799244D249831450083EF85 /* Geometry.swift */,
+				77992452249831450083EF85 /* Location.swift */,
+				77992454249831460083EF85 /* Northeast.swift */,
+				77992455249831460083EF85 /* OpeningHours.swift */,
+				7799244C249831440083EF85 /* Photos.swift */,
+				77992453249831460083EF85 /* PlusCode.swift */,
+				77992451249831450083EF85 /* Results.swift */,
+				7799244E249831450083EF85 /* Southwest.swift */,
+				7799244F249831450083EF85 /* Viewport.swift */,
+			);
+			path = NearbyPlace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,15 +460,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7799245D249831470083EF85 /* PlusCode.swift in Sources */,
 				7799241F2497D4510083EF85 /* NetworkRequest.swift in Sources */,
+				7799245A249831470083EF85 /* Place.swift in Sources */,
+				775667F22498B3CB00406297 /* UIColor+Extension.swift in Sources */,
+				77992457249831470083EF85 /* Geometry.swift in Sources */,
 				779924212497D4C50083EF85 /* Router.swift in Sources */,
 				77992446249821260083EF85 /* URLEncoding.swift in Sources */,
+				7799245C249831470083EF85 /* Location.swift in Sources */,
 				773DAF44248DC8E1002EE000 /* AppDelegate.swift in Sources */,
+				77992458249831470083EF85 /* Southwest.swift in Sources */,
+				775667F72498B40200406297 /* HomeCell.swift in Sources */,
+				775667F42498B3DE00406297 /* NearbyPlacesViewController.swift in Sources */,
 				773DAF46248DC8E1002EE000 /* SceneDelegate.swift in Sources */,
+				77992456249831460083EF85 /* Photos.swift in Sources */,
+				7799245E249831470083EF85 /* Northeast.swift in Sources */,
 				7799241D2497D1340083EF85 /* WebServices.swift in Sources */,
+				775667EF2498B37600406297 /* HomeItem.swift in Sources */,
+				7799245B249831470083EF85 /* Results.swift in Sources */,
 				773DAFAF24916B4F002EE000 /* NetworkConstant.swift in Sources */,
 				773DAF69248DCCF1002EE000 /* HomeViewController.swift in Sources */,
+				77992459249831470083EF85 /* Viewport.swift in Sources */,
 				773DAFB224916BAA002EE000 /* Constants.swift in Sources */,
+				7799245F249831470083EF85 /* OpeningHours.swift in Sources */,
 				7799244A249827120083EF85 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
