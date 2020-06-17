@@ -26,4 +26,20 @@ struct NetworkRequest {
         
         dataTask.resume()
     }
+    
+    static func requestDetail(_ route: Router, completion: @escaping (DirectionDetail) -> () ) {
+        let request =  route.asURLRequest()
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else {return}
+            do {
+                let directionDetail = try JSONDecoder().decode(DirectionDetail.self, from: data)
+                completion(directionDetail)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        
+        dataTask.resume()
+    }
+
 }

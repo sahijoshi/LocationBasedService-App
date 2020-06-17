@@ -46,7 +46,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: 5 KM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTn-zL-wRt" customClass="VerticalTopAlignLabel" customModule="LBSAR" customModuleProvider="target">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTn-zL-wRt" customClass="VerticalTopAlignLabel" customModule="LBSAR" customModuleProvider="target">
                     <rect key="frame" x="74" y="47" width="187" height="20"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -101,14 +101,14 @@
             <connections>
                 <outlet property="imagePlace" destination="Wc1-IU-P0U" id="x64-Lc-1Y4"/>
                 <outlet property="lblClose" destination="Bka-mh-BSS" id="vih-Xp-Lqe"/>
-                <outlet property="lblDistance" destination="CTn-zL-wRt" id="MH7-V2-WW6"/>
                 <outlet property="lblTitle" destination="aFK-5V-Kyc" id="wnb-ta-Nth"/>
+                <outlet property="lblTotalUserRating" destination="CTn-zL-wRt" id="MH7-V2-WW6"/>
                 <outlet property="ratingView" destination="hFp-Gw-ZNR" id="Cd0-oh-ZIq"/>
             </connections>
             <point key="canvasLocation" x="-54.5" y="-302"/>
         </view>
     </objects>
     <resources>
-        <image name="direction" width="100" height="100"/>
+        <image name="direction" width="24.5" height="24.5"/>
     </resources>
 </document>

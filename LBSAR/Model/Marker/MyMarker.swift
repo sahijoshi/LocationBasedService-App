@@ -10,5 +10,5 @@ import UIKit
 import GoogleMaps
 
 class MyMarker: GMSMarker {
-    var place: Place?
+    var place: Results?
 }

@@ -16,7 +16,7 @@ protocol MarkerCustomInfoDelegate {
 
 class MarkerCustomInfo: UIView {
     @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblDistance: UILabel!
+    @IBOutlet weak var lblTotalUserRating: UILabel!
     @IBOutlet weak var lblClose: UILabel!
     @IBOutlet weak var imagePlace: UIImageView!
     @IBOutlet weak var ratingView: CosmosView!

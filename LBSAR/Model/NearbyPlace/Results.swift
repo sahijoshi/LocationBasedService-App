@@ -53,12 +53,12 @@ struct Results: Codable {
     types = try container.decodeIfPresent([String].self, forKey: .types)
     userRatingsTotal = try container.decodeIfPresent(Int.self, forKey: .userRatingsTotal)
     plusCode = try container.decodeIfPresent(PlusCode.self, forKey: .plusCode)
-    reference = try container.decodeIfPresent(String.self, forKey: .reference)
-    vicinity = try container.decodeIfPresent(String.self, forKey: .vicinity)
+    reference = try container.decodeIfPresent(String.self, forKey: .reference) ?? ""
+    vicinity = try container.decodeIfPresent(String.self, forKey: .vicinity) ?? ""
     scope = try container.decodeIfPresent(String.self, forKey: .scope)
     placeId = try container.decodeIfPresent(String.self, forKey: .placeId)
     photos = try container.decodeIfPresent([Photos].self, forKey: .photos)
-    name = try container.decodeIfPresent(String.self, forKey: .name)
+    name = try container.decodeIfPresent(String.self, forKey: .name) ?? ""
     rating = try container.decodeIfPresent(Float.self, forKey: .rating)
     geometry = try container.decodeIfPresent(Geometry.self, forKey: .geometry)
     businessStatus = try container.decodeIfPresent(String.self, forKey: .businessStatus)

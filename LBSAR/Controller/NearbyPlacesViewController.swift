@@ -16,13 +16,13 @@ class NearbyPlacesViewController: UIViewController {
     @IBOutlet weak var btnArview: UIButton!
 
     var aHomeItem = HomeItem()
-    var aPlace: Place?
+    var aPlace: Results?
 
     let locationManager = CLLocationManager()
     var tappedMarker : GMSMarker?
     var customInfoWindow : MarkerCustomInfo?
     var arViewController: ARViewController!
-    var places = [Place]()
+//    var places = [Place]()
     var loadPOIsOnlyOnce = false
     var currentLocation: CLLocation?
 
@@ -57,11 +57,10 @@ class NearbyPlacesViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let directionVC = segue.destination as? DirectionViewController {
-//            self.aPlace?.curLocation = self.currentLocation
-//            directionVC.aHomeItem = self.aHomeItem
-//            directionVC.aPlace = self.aPlace
-//        }
+        if let directionVC = segue.destination as? DirectionViewController {
+            let directionDependency = DirectionDependency(home: aHomeItem, currentLocation: currentLocation, place: aPlace)
+            directionVC.directionDependency = directionDependency
+        }
     }
 
     // MARK: - Private Methods
@@ -73,46 +72,53 @@ class NearbyPlacesViewController: UIViewController {
 
     private func loadNearbyPlacesData() {
         WebServices.loadNearbyPointOfInterest(location: currentLocation!, radius: Constants.Preferences.mapRadius, searchKey: aHomeItem.key) { [weak self] (results) in
-            guard let results = results else {return}
+            guard let placeResults = results else {return}
             DispatchQueue.main.async {
-                self?.plotMarkersOnMapWith(results)
+                self?.plotMarkersOnMapWith(placeResults)
             }
         }
     }
 
     // display markers based on coordinates received from nearby places.
 
-    private func plotMarkersOnMapWith(_ placeDataArr: [Results]) {
-//        self.places = placeDataArr
+    private func plotMarkersOnMapWith(_ placeResults: [Results]) {
+//        self.places = placeResults
         
-        for result in placeDataArr {
-            let latitude = CLLocationDegrees((result.geometry?.location?.lat)!)
-            let longitude = CLLocationDegrees((result.geometry?.location?.lng)!)
+        for place in placeResults {
+            let latitude = CLLocationDegrees((place.geometry?.location?.lat)!)
+            let longitude = CLLocationDegrees((place.geometry?.location?.lng)!)
 
             let marker = MyMarker()
             let image = UIImage(named: aHomeItem.key)
 
             marker.position = CLLocationCoordinate2DMake(latitude, longitude)
-//            marker.place = place
+            marker.place = place
             marker.icon = image
             marker.map = self.googleMaps
         }
     }
 
-//    private func displayPlaceInformationAt(_ position:CLLocationCoordinate2D, aPlace: Place, for mapView: GMSMapView) {
-//        self.aPlace = aPlace
-//
-//        customInfoWindow?.center = mapView.projection.point(for: position)
-//        customInfoWindow?.center.y -= 100
-//        customInfoWindow?.lblClose.text = aPlace.openNow ? "Open" : "Close"
-//        customInfoWindow?.lblTitle.text = aPlace.placeName
-//        customInfoWindow?.lblDistance.text = "Total User Rating: \(aPlace.userTotalRating)"
-//
+    private func displayPlaceInformationAt(_ position:CLLocationCoordinate2D, place: Results, for mapView: GMSMapView) {
+        self.aPlace = place
+
+        customInfoWindow?.center = mapView.projection.point(for: position)
+        customInfoWindow?.center.y -= 100
+        if let openNow = place.openingHours?.openNow {
+            customInfoWindow?.lblClose.text = openNow ? "Open" : "Close"
+        }
+
+        customInfoWindow?.lblTitle.text = place.name
+        if let totalUserRating = place.userRatingsTotal {
+            customInfoWindow?.lblTotalUserRating.text = "Total User Rating: \(totalUserRating)"
+        }
+        
 //        customInfoWindow?.imagePlace.sd_setImage(with: URL.init(string: aPlace.imageUrl)!, placeholderImage: UIImage(named: "Placeholder"), options: .highPriority)
-//        customInfoWindow?.ratingView.rating = aPlace.rating
-//
-//        googleMaps.addSubview(customInfoWindow!)
-//    }
+        if let rating = place.rating {
+            customInfoWindow?.ratingView.rating = Double(rating)
+        }
+
+        googleMaps.addSubview(customInfoWindow!)
+    }
 
     // MARK: - IBAction Methods
 
@@ -195,7 +201,7 @@ extension NearbyPlacesViewController: ARDataSource {
 extension NearbyPlacesViewController: AnnotationViewDelegate {
     func didTouch(annotationView: AnnotationView) {
         if let annotation = annotationView.annotation as? Place {
-            self.aPlace = annotation
+//            self.aPlace = annotation
         }
 
         self.arViewController.dismiss(animated: false) {
@@ -234,8 +240,8 @@ extension NearbyPlacesViewController: GMSMapViewDelegate {
         googleMaps.isMyLocationEnabled = true
 
         if let myMarker = marker as? MyMarker {
-            if let aPlace = myMarker.place {
-//                displayPlaceInformationAt(marker.position, aPlace: aPlace, for: mapView)
+            if let place = myMarker.place {
+                displayPlaceInformationAt(marker.position, place: place, for: mapView)
             }
         }
         return false
