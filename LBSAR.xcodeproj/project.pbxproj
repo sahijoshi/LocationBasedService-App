@@ -52,6 +52,8 @@
 		7799245D249831470083EF85 /* PlusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992453249831460083EF85 /* PlusCode.swift */; };
 		7799245E249831470083EF85 /* Northeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992454249831460083EF85 /* Northeast.swift */; };
 		7799245F249831470083EF85 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992455249831460083EF85 /* OpeningHours.swift */; };
+		77B2FF95249BB145002A9926 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 77B2FF94249BB143002A9926 /* README.md */; };
+		77B2FF98249BB154002A9926 /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 77B2FF97249BB154002A9926 /* preview.gif */; };
 		AAC68CA7E6DA9FCCDD16B585 /* Pods_LBSAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FFE72947BC44C36EED39B4 /* Pods_LBSAR.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,8 @@
 		77992453249831460083EF85 /* PlusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusCode.swift; sourceTree = "<group>"; };
 		77992454249831460083EF85 /* Northeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Northeast.swift; sourceTree = "<group>"; };
 		77992455249831460083EF85 /* OpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
+		77B2FF94249BB143002A9926 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		77B2FF97249BB154002A9926 /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
 		77C6E86B6A7802D930F0B3F4 /* Pods-LBSAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBSAR.release.xcconfig"; path = "Target Support Files/Pods-LBSAR/Pods-LBSAR.release.xcconfig"; sourceTree = "<group>"; };
 		91A4759ED8A8048E4EE709CE /* libPods-LBSARTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBSARTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FFE72947BC44C36EED39B4 /* Pods_LBSAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBSAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +189,8 @@
 		773DAF42248DC8E1002EE000 /* LBSAR */ = {
 			isa = PBXGroup;
 			children = (
+				77B2FF94249BB143002A9926 /* README.md */,
+				77B2FF96249BB154002A9926 /* Assets */,
 				773DAF6B248DCD08002EE000 /* Network */,
 				773DAF6A248DCD00002EE000 /* Utility */,
 				773DAF65248DCCB6002EE000 /* Model */,
@@ -370,6 +376,14 @@
 			path = NearbyPlace;
 			sourceTree = "<group>";
 		};
+		77B2FF96249BB154002A9926 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				77B2FF97249BB154002A9926 /* preview.gif */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,8 +470,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				773DAF50248DC8E3002EE000 /* LaunchScreen.storyboard in Resources */,
+				77B2FF98249BB154002A9926 /* preview.gif in Resources */,
 				7756680F24994ADB00406297 /* AnnotationView.xib in Resources */,
 				7756681024994ADB00406297 /* InfoView.xib in Resources */,
+				77B2FF95249BB145002A9926 /* README.md in Resources */,
 				773DAF4D248DC8E3002EE000 /* Assets.xcassets in Resources */,
 				7756681124994ADB00406297 /* MarkerCustomInfo.xib in Resources */,
 				773DAF4B248DC8E1002EE000 /* Main.storyboard in Resources */,
