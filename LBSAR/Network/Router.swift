@@ -29,7 +29,7 @@ protocol URLConverter {
 
 enum Router: EndPointType, URLConverter {
     case loadPointOfInterest(location: CLLocation, radius: Int, searchKey: String)
-    case loadDetailInformation(place: Results)
+    case loadDetailInformation(place: Place)
 
     var baseURL: String {
         return Constants.URL.baseUrl
@@ -47,14 +47,13 @@ enum Router: EndPointType, URLConverter {
             return "nearbysearch/json?location=\(location.coordinate.latitude),\(location.coordinate.longitude)&radius=\(radius)&sensor=true&types=\(searchKey)&key=\(Constants.APIKey.googleApiKey)"
             
         case .loadDetailInformation(let place):
-                return "details/json?reference=\(place.reference!)&sensor=true&key=\(Constants.APIKey.googleApiKey)"
+                return "details/json?reference=\(place.reference)&sensor=true&key=\(Constants.APIKey.googleApiKey)"
         }
     }
     
     func asURLRequest() -> URLRequest {
         let baseUrl = URL(string: baseURL)
         let url = URL(string: (baseUrl?.appendingPathComponent(path).absoluteString.removingPercentEncoding)!)
-        print(url)
         var urlRequest = URLRequest(url: url!, timeoutInterval: TimeInterval(10 * 1000))
 
         urlRequest.httpMethod = method.rawValue

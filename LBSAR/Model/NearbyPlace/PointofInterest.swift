@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Place: Codable {
+struct PointofInterest: Codable {
 
   enum CodingKeys: String, CodingKey {
     case results

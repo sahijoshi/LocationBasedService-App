@@ -34,6 +34,9 @@
 		7756681E249A0D4A00406297 /* DirectionDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756681D249A0D4A00406297 /* DirectionDependency.swift */; };
 		77566822249A50DE00406297 /* PlaceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756681F249A50DD00406297 /* PlaceInfo.swift */; };
 		77566823249A50DE00406297 /* DirectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77566820249A50DD00406297 /* DirectionDetail.swift */; };
+		77566828249AA26F00406297 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77566827249AA26F00406297 /* Place.swift */; };
+		7756682A249AA28200406297 /* DataAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77566829249AA28200406297 /* DataAssemble.swift */; };
+		7756682C249B6CAA00406297 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756682B249B6CAA00406297 /* UIImageView+Extension.swift */; };
 		7799241D2497D1340083EF85 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799241C2497D1340083EF85 /* WebServices.swift */; };
 		7799241F2497D4510083EF85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799241E2497D4510083EF85 /* NetworkRequest.swift */; };
 		779924212497D4C50083EF85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779924202497D4C50083EF85 /* Router.swift */; };
@@ -43,7 +46,7 @@
 		77992457249831470083EF85 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244D249831450083EF85 /* Geometry.swift */; };
 		77992458249831470083EF85 /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244E249831450083EF85 /* Southwest.swift */; };
 		77992459249831470083EF85 /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799244F249831450083EF85 /* Viewport.swift */; };
-		7799245A249831470083EF85 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992450249831450083EF85 /* Place.swift */; };
+		7799245A249831470083EF85 /* PointofInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992450249831450083EF85 /* PointofInterest.swift */; };
 		7799245B249831470083EF85 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992451249831450083EF85 /* Results.swift */; };
 		7799245C249831470083EF85 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992452249831450083EF85 /* Location.swift */; };
 		7799245D249831470083EF85 /* PlusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77992453249831460083EF85 /* PlusCode.swift */; };
@@ -94,6 +97,9 @@
 		7756681D249A0D4A00406297 /* DirectionDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionDependency.swift; sourceTree = "<group>"; };
 		7756681F249A50DD00406297 /* PlaceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInfo.swift; sourceTree = "<group>"; };
 		77566820249A50DD00406297 /* DirectionDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionDetail.swift; sourceTree = "<group>"; };
+		77566827249AA26F00406297 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		77566829249AA28200406297 /* DataAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssemble.swift; sourceTree = "<group>"; };
+		7756682B249B6CAA00406297 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		7799241C2497D1340083EF85 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		7799241E2497D4510083EF85 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		779924202497D4C50083EF85 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -103,7 +109,7 @@
 		7799244D249831450083EF85 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		7799244E249831450083EF85 /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
 		7799244F249831450083EF85 /* Viewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
-		77992450249831450083EF85 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		77992450249831450083EF85 /* PointofInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointofInterest.swift; sourceTree = "<group>"; };
 		77992451249831450083EF85 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		77992452249831450083EF85 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		77992453249831460083EF85 /* PlusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusCode.swift; sourceTree = "<group>"; };
@@ -206,6 +212,8 @@
 		773DAF65248DCCB6002EE000 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77566826249AA1E900406297 /* AugmentedReality */,
+				77566825249AA16100406297 /* DataPrepare */,
 				7756681C249A0D0B00406297 /* DirectionDetail */,
 				775668122499560100406297 /* Marker */,
 				775667ED2498B36800406297 /* Home */,
@@ -268,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				775667F12498B3CB00406297 /* UIColor+Extension.swift */,
+				7756682B249B6CAA00406297 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +329,22 @@
 			path = DirectionDetail;
 			sourceTree = "<group>";
 		};
+		77566825249AA16100406297 /* DataPrepare */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataPrepare;
+			sourceTree = "<group>";
+		};
+		77566826249AA1E900406297 /* AugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				77566827249AA26F00406297 /* Place.swift */,
+				77566829249AA28200406297 /* DataAssemble.swift */,
+			);
+			path = AugmentedReality;
+			sourceTree = "<group>";
+		};
 		77992444249821110083EF85 /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,7 +356,7 @@
 		7799244B249831220083EF85 /* NearbyPlace */ = {
 			isa = PBXGroup;
 			children = (
-				77992450249831450083EF85 /* Place.swift */,
+				77992450249831450083EF85 /* PointofInterest.swift */,
 				7799244D249831450083EF85 /* Geometry.swift */,
 				77992452249831450083EF85 /* Location.swift */,
 				77992454249831460083EF85 /* Northeast.swift */,
@@ -536,12 +561,13 @@
 			files = (
 				7799245D249831470083EF85 /* PlusCode.swift in Sources */,
 				7799241F2497D4510083EF85 /* NetworkRequest.swift in Sources */,
-				7799245A249831470083EF85 /* Place.swift in Sources */,
+				7799245A249831470083EF85 /* PointofInterest.swift in Sources */,
 				7756681B249A085E00406297 /* DirectionViewController.swift in Sources */,
 				77566818249971DE00406297 /* TopAlignLabel.swift in Sources */,
 				775667F22498B3CB00406297 /* UIColor+Extension.swift in Sources */,
 				77992457249831470083EF85 /* Geometry.swift in Sources */,
 				77566823249A50DE00406297 /* DirectionDetail.swift in Sources */,
+				7756682C249B6CAA00406297 /* UIImageView+Extension.swift in Sources */,
 				779924212497D4C50083EF85 /* Router.swift in Sources */,
 				77992446249821260083EF85 /* URLEncoding.swift in Sources */,
 				7799245C249831470083EF85 /* Location.swift in Sources */,
@@ -553,6 +579,8 @@
 				77992456249831460083EF85 /* Photos.swift in Sources */,
 				7799245E249831470083EF85 /* Northeast.swift in Sources */,
 				7799241D2497D1340083EF85 /* WebServices.swift in Sources */,
+				7756682A249AA28200406297 /* DataAssemble.swift in Sources */,
+				77566828249AA26F00406297 /* Place.swift in Sources */,
 				775667EF2498B37600406297 /* HomeItem.swift in Sources */,
 				775668142499560B00406297 /* MyMarker.swift in Sources */,
 				7756681E249A0D4A00406297 /* DirectionDependency.swift in Sources */,

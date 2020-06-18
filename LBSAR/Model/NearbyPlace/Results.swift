@@ -51,7 +51,7 @@ struct Results: Codable {
     id = try container.decodeIfPresent(String.self, forKey: .id)
     openingHours = try container.decodeIfPresent(OpeningHours.self, forKey: .openingHours)
     types = try container.decodeIfPresent([String].self, forKey: .types)
-    userRatingsTotal = try container.decodeIfPresent(Int.self, forKey: .userRatingsTotal)
+    userRatingsTotal = try container.decodeIfPresent(Int.self, forKey: .userRatingsTotal) ?? 0
     plusCode = try container.decodeIfPresent(PlusCode.self, forKey: .plusCode)
     reference = try container.decodeIfPresent(String.self, forKey: .reference) ?? ""
     vicinity = try container.decodeIfPresent(String.self, forKey: .vicinity) ?? ""
@@ -59,7 +59,7 @@ struct Results: Codable {
     placeId = try container.decodeIfPresent(String.self, forKey: .placeId)
     photos = try container.decodeIfPresent([Photos].self, forKey: .photos)
     name = try container.decodeIfPresent(String.self, forKey: .name) ?? ""
-    rating = try container.decodeIfPresent(Float.self, forKey: .rating)
+    rating = try container.decodeIfPresent(Float.self, forKey: .rating) ?? 0.0
     geometry = try container.decodeIfPresent(Geometry.self, forKey: .geometry)
     businessStatus = try container.decodeIfPresent(String.self, forKey: .businessStatus)
   }

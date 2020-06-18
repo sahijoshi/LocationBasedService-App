@@ -9,37 +9,21 @@
 import Foundation
 
 struct NetworkRequest {
-    
-    static func request(_ route: Router, completion: @escaping (Place) -> () ) {
-        let request =  route.asURLRequest()
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data else {return}
-            
-            do {
-                let place = try JSONDecoder().decode(Place.self, from: data)
-                completion(place)
-            } catch {
-                print(error.localizedDescription)
-            }
-            
-        }
         
-        dataTask.resume()
-    }
-    
-    static func requestDetail(_ route: Router, completion: @escaping (DirectionDetail) -> () ) {
-        let request =  route.asURLRequest()
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data else {return}
-            do {
-                let directionDetail = try JSONDecoder().decode(DirectionDetail.self, from: data)
-                completion(directionDetail)
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
-        
-        dataTask.resume()
-    }
+    static func request<T: Decodable>(_ route: Router, completion: @escaping (Result<T, Error>) -> () ) {
+            let request =  route.asURLRequest()
+            let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                guard let data = data else {return}
 
+                do {
+                    let pointofInterest = try JSONDecoder().decode(T.self, from: data)
+                    completion(.success(pointofInterest))
+                } catch {
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                }
+            }
+
+            dataTask.resume()
+        }
 }

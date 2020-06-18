@@ -13,17 +13,27 @@ struct WebServices {
     
     static func loadNearbyPointOfInterest(location: CLLocation, radius: Int = 9000, searchKey: String = "", completion: @escaping ([Results]?) -> ()) {
         let router = Router.loadPointOfInterest(location: location, radius: 9000, searchKey: "bank")
-        
-        NetworkRequest.request(router){ place in
-            completion(place.results)
+                
+        NetworkRequest.request(router){ (result: Result<PointofInterest, Error>) in
+            switch result {
+            case .success(let pointofInterest):
+                completion(pointofInterest.results)
+            case .failure:
+                completion(nil)
+            }
         }
     }
     
-    static func loadDetailInformationFor(_ place: Results, completion: @escaping (PlaceInfo?) -> ()) {
+    static func loadDetailInformationFor(_ place: Place, completion: @escaping (PlaceInfo?) -> ()) {
         let router = Router.loadDetailInformation(place: place)
-        
-        NetworkRequest.requestDetail(router) { directionDetail in
-            completion(directionDetail.result)
+                
+        NetworkRequest.request(router){ (result: Result<DirectionDetail, Error>) in
+            switch result {
+            case .success(let directionDetail):
+                completion(directionDetail.result)
+            case .failure:
+                completion(nil)
+            }
         }
     }
     

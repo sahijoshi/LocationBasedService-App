@@ -25,7 +25,7 @@ struct Photos: Codable {
 
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
-    photoReference = try container.decodeIfPresent(String.self, forKey: .photoReference)
+    photoReference = try container.decodeIfPresent(String.self, forKey: .photoReference) ?? ""
     htmlAttributions = try container.decodeIfPresent([String].self, forKey: .htmlAttributions)
     height = try container.decodeIfPresent(Int.self, forKey: .height)
     width = try container.decodeIfPresent(Int.self, forKey: .width)
